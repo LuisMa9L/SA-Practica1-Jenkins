@@ -1,0 +1,24 @@
+version: '3.1'
+
+services: 
+  Practica1:
+    container_name: practica1_container
+    image: practica1_img
+    build: 
+      context: ./
+      dockerfile: Dockerfile
+    restart: always
+    ports:
+      - 3004:3004  
+
+  # Practica1_2:
+  #   container_name: practica1_container_2
+  #   image: practica1_img_2
+  #   build: 
+  #     context: ./
+  #     dockerfile: Dockerfile
+  #   restart: always
+  #   env_file: 
+  #     - ./.env
+  #   ports:
+  #     - 3006:3006      
